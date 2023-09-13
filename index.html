@@ -4,6 +4,7 @@
   <title>Signal TV</title>
 
   <!-- LINK STYLES -->
+  <link rel="stylesheet" href="assets/Css/Carrossel_chn/card.css">
   <link rel="stylesheet" href="assets/Css/navbar_style/nav_style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -14,7 +15,7 @@
   <nav>
       <div class="sidebar">
           <div class="logo_details">
-            <i class='bx bx-cube-alt'></i>
+            <i class='bx bx-podcast'></i>
             <div class="logo_name">Signal TV</div>
             <i class="bx bx-menu" id="btn"></i>
           </div>
@@ -71,9 +72,96 @@
             </li>
           </ul>
         </div>
-        <section class="home-section">
-          <div class="text">Dashboard</div>
+
+
+        <!-- CARROUSSEL CHANEL -->
+
+        <section class="swiper mySwiper">
+
+          <div class="swiper-wrapper">
+      
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="assets/img/profile/logo_chanels/logo_record.png" alt="card image">
+              </div>
+      
+              <div class="card__content">
+                <span class="card__title">Rede Record</span>
+                <span class="card__name">Canal 08</span>
+                <p class="card__text">Rede Record de Televisão</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+      
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="#" alt="card image">
+              </div>
+      
+              <div class="card__content">
+                <span class="card__title">Ui Designer</span>
+                <span class="card__name">Sarah Bowen</span>
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+      
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user3.jpg" alt="card image">
+              </div>
+      
+              <div class="card__content">
+                <span class="card__title">Web Developer</span>
+                <span class="card__name">David Murphy</span>
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+      
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user4.jpg" alt="card image">
+              </div>
+      
+              <div class="card__content">
+                <span class="card__title">Rede Globo</span>
+                <span class="card__name">Canal 10</span>
+                <p class="card__text">Rede Globo de televisão</p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+      
+          </div>
         </section>
+      
+      <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 300,
+              modifier: 1,
+              slideShadows: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          });
+        </script>
+
+
+        <!--  <section class="home-section">
+          <div class="text">Dashboard</div>
+        </section> -->
   </nav>
   
   <!-- SCRIPTS -->
