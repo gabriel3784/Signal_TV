@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
 :root{
   --color-default:#272f35;
   --color-second:#272f35;
@@ -48,12 +51,11 @@ body{
   transition: all 0.5s ease ;
 }
 
-
-
 .sidebar .logo_details .logo_name{
+  font-family: 'Audiowide', cursive;
   color:var(--color-white);
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   opacity: 0;
   transition: all .5s ease;
 }
