@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-------------------- Link CSS ------------>
+<!-------------------- Link CSS ------------>
   <link rel="stylesheet" href="assets/navbar/sidebar.css">
 
-  <!-------------------- Boxicons CSS ------------>
+<!-------------------- Boxicons CSS ------------>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <title>Signal TV</title>
@@ -15,7 +15,7 @@
 <body>
   <nav class="sidebar">
     <header>
-  <!------------------ Logo and Info ---------->
+<!------------------ Logo and Info ---------->
       <div class="image-text">
         <span class="image">
           <img src="assets/img/logo.jpeg" alt="logo">
@@ -30,12 +30,15 @@
 
     </header>
 
+<!--------- Campo de Pesquisa ---------------------->
     <div class="menu-bar">
       <div class="menu">
         <li class="search-box">
             <i class='bx bx-search icon' ></i>
             <input type="search" placeholder="Pesquisar">
         </li>
+
+<!--------- Menus de Navegação ---------------------->      
         <ul class="menu-links">
           <li class="nav-link">
             <a href="#">
@@ -43,7 +46,47 @@
               <span class="text nav-text">Início</span>
             </a>
           </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-film icon' ></i>
+              <span class="text nav-text">Programação</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bxs-videos icon' ></i>
+              <span class="text nav-text">Galeria</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-cog icon' ></i>
+              <span class="text nav-text">Configurações</span>
+            </a>
+          </li>
         </ul>
+      </div>
+
+<!-- Botões (Sair, Modos Escuro/Claro e Gravação de tela) ----->
+      <div class="botton-content">
+        <li class="">
+          <a href="#">
+            <i class='bx bx-log-out icon' ></i>
+            <span class="text nav-text">Sair</span>
+          </a>
+        </li>
+
+        <li class="mode">
+          <div class="moon-sun">
+            <i class='bx bx-moon icon' ></i>
+            <i class='bx bx-sun icon' ></i>
+          </div>
+          <span class="mode-text text">Modo escuro</span>
+        </li>
+
       </div>
     </div>
   </nav>
